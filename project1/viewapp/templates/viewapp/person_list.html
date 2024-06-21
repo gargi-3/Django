@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Person List</title>
+    </head>
+    <body>
+        <h2>Person List</h2>
+        <form method="GET">
+            <input type="text" name="q" placeholder="Search by first_name">
+            <button type="submit">Search</button>
+        </form>
+        <ul>
+            {% for person in persons %}
+                <li><a href="{% url 'person_detail' person.pk %}"> {{ person }} </a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

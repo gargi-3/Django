@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>My Web Site Demo</title>
+    </head>
+    <body>
+        {% include 'myapp/header.html' with title="Welcome To Home Page" nav_links=nav_links %}
+
+        <main>
+            <h2>Home Page</h2>
+            <p>This content is for home page.</p>
+        </main>
+
+        {% include 'myapp/footer.html' %}
+    </body>
+</html>

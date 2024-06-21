@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Create Person</title>
+    </head>
+    <body>
+        <h2>Create a Person Data</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Save</button>
+        </form>
+    </body>
+</html>

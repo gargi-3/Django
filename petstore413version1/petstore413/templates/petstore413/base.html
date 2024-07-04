@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pet Store</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'petstore413/styles.css' %}">
+    </head>
+    <body>
+        <h1>Welcome to The Pet Store Project</h1>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'pet_list' %}">Pets</a></li>
+                    <li><a href="{% url 'product_list' %}">Products</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            {% block content %} {% endblock %}
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Petstore by Batch-413</p>
+        </footer>
+    </body>
+</html>

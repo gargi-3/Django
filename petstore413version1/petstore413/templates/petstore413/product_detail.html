@@ -1,0 +1,12 @@
+{% extends 'petstore413/base.html' %}
+{% block title %} Product Detail {% endblock %}
+{% block content %}
+        <h1>Products Detail Page</h1>
+        <p>Name : <h2>{{ product.name }}</h2></p>
+        <p>Description : {{ product.description }}</p>
+        <p>Image : 
+            {% if product.image %}
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+            {% endif %}
+        </p>
+{% endblock %}

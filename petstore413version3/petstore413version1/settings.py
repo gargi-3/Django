@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '' #Enter your secret key
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False #Make it 'True'
 
 ALLOWED_HOSTS = []
 
@@ -136,8 +136,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-RAZORPAY_TEST_KEY_ID = 'rzp_test_PxyqrQSnCXlZfO'
-RAZORPAY_TEST_KEY_SECRET = 'Bkis0kGCwrj42MFSOKlBxAni'
+RAZORPAY_TEST_KEY_ID = '' # Your Key ID
+RAZORPAY_TEST_KEY_SECRET = '' # Your Key Secret
 
 RAZORPAY_PAYMENT_SETTINGS = {
     'key_id': RAZORPAY_TEST_KEY_ID,
